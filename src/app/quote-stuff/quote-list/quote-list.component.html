@@ -1,0 +1,12 @@
+<h2> Quote List </h2>
+
+<ul>
+  <li *ngFor="let quote of allTheQuotes">
+    <!-- Name of the input inside the child
+                       |  Value we want to send in from the parent
+                       |           |                -->
+    <app-quote-item [quoteInfo]="quote"></app-quote-item>
+  </li>
+</ul>
+
+<br>
