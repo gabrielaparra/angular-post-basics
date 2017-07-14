@@ -1,9 +1,20 @@
 <header>
   <h1> Angular: Post-Basics </h1>
+
+  <nav>
+    <a [routerLink]="['/']"> Quotes List Link </a>
+    <!-- this is like using 'src' but it wont refresh the page -->
+    <br>
+    <a [routerLink]="['/forms']"> Forms Link </a>
+    <br>
+    <a [routerLink]="['/contacts']"> Contacts </a>
+    <br>
+  </nav>
 </header>
 
-<app-quote-list></app-quote-list>
-<!-- quotelist will display all the quotes -->
+<!-- this is kind of like '<%- body %> in EJS layouts' -->
+<router-outlet></router-outlet>
+<!-- must be called <router-outlet> -->
 
 <app-forms></app-forms>
 
