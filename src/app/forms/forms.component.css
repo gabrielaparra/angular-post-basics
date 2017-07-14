@@ -1,0 +1,11 @@
+section {
+  border: 1px solid lightgreen;
+}
+
+.error {
+  color: crimson;
+  border: 1px solid crimson;
+  padding: 5px;
+  border-radius: 3px;
+  display: inline-block;
+}
