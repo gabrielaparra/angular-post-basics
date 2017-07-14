@@ -1,3 +1,11 @@
-<p>
-  contact-list works!
-</p>
+<h2> Your Contacts </h2>
+
+<ul>
+  <li *ngFor="let contact of allTheContacts">
+    <h3> {{contact.name}} </h3>
+    <a [routerLink]="['contacts', contact.id]">
+    <!-- <a href="/contacts/<%= contact.id %>"> -->
+      View Details
+    </a>
+  </li>
+</ul>
