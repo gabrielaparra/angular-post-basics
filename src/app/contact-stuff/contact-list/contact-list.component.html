@@ -3,7 +3,7 @@
 <ul>
   <li *ngFor="let contact of allTheContacts">
     <h3> {{contact.name}} </h3>
-    <a [routerLink]="['contacts', contact.id]">
+    <a [routerLink]="['/contacts', contact.id]">
     <!-- <a href="/contacts/<%= contact.id %>"> -->
       View Details
     </a>

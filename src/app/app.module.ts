@@ -19,7 +19,7 @@ const myRoutes: Routes = [
   { path: 'forms', component: FormsComponent },
   //       '/forms' URL
   { path: 'contacts', component: ContactListComponent },
-  { path: 'contacts/:myId', component: ContactDetailsComponent },
+  { path: 'contacts/:id', component: ContactDetailsComponent },
 ];
 
 @NgModule({
