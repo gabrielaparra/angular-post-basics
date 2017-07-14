@@ -3,9 +3,12 @@
 <ul>
   <li *ngFor="let quote of allTheQuotes">
     <!-- Name of the input inside the child
-                       |  Value we want to send in from the parent
-                       |           |                -->
-    <app-quote-item [quoteInfo]="quote"></app-quote-item>
+           |                -->
+    <app-quote-item
+      (onQuoteDelete)="doSomething($event)"
+      [quoteInfo]="quote">
+    <!-- ^ Value we want to send in from the parent -->
+    </app-quote-item>
   </li>
 </ul>
 

@@ -26,4 +26,9 @@ export class QuoteListComponent implements OnInit {
   ngOnInit() {
   }
 
+  doSomething(quote) {
+    const quoteIndex = this.allTheQuotes.indexOf(quote);
+    this.allTheQuotes.splice(quoteIndex, 1);
+  }
+
 }
